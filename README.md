@@ -1,1 +1,7 @@
-# hardware_study
+## hardware study
+
+### Target
+
+- [ ] type-c
+- [ ] riscv64
+- [ ] 
