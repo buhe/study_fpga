@@ -2,6 +2,8 @@
 
 ### Target
 
+- [ ] blink: chisel to verilog
+- [ ] blink: flah to hardware
 - [ ] riscv64
 
 ### Install
