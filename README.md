@@ -1,4 +1,4 @@
-## hardware study with open soruce software
+## hardware study with open source software
 
 ### Target
 
