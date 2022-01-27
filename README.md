@@ -23,6 +23,7 @@ sudo make install
 
 ```bash
 # compile example
+cd example
 yosys -D LEDS_NR=8 -p "synth_gowin -json blinky.json" blinky.v
 # nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NR-UV9QN881C6/I5 --cst tec0117.cst
 
