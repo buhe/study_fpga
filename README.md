@@ -19,7 +19,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-### Demo for example
+### Demo
 
 ```bash
 # compile example
