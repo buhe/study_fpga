@@ -1,4 +1,4 @@
-## hardware study with open source software
+## Fpga study with open source software
 
 ### Target
 
