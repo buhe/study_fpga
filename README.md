@@ -2,8 +2,9 @@
 
 ### Target
 
+- [ ] yosys: flash to haedware
 - [ ] blink: chisel to verilog
-- [ ] blink: flah to hardware
+- [ ] blink: use yosys flah to hardware
 - [ ] riscv64
 
 ### Install
