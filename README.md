@@ -7,6 +7,11 @@
 - [ ] blink: use yosys flah to hardware
 - [ ] riscv64
 
+### Hardware
+
+- tang nano 4k
+- tang nano 9k
+
 ### Basic 
 
 - https://www.bilibili.com/video/BV1aJ411R7Hd
