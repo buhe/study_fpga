@@ -39,4 +39,12 @@ yosys -p "read_verilog -lib +/gowin/cells_sim.v; clean -purge; show" unpack.v
 # change to your board
 openFPGALoader -b tangnano4k pack.fs
 ```
+### chisel
+```bash
+yosys -p "synth_gowin -top Led -json blinky.json" output/Led.v
 
+nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC7/I6 --cst examples/tangnano4k.cst
+
+gowin_pack -d GW1NSR-LV4CQN48PC7/I6 -o pack.fs pnrblinky.json
+
+```
