@@ -22,11 +22,11 @@ make -j$(nproc)
 sudo make install
 ```
 
-### Demo
+### Verilog
 
 ```bash
 # compile example
-cd example
+cd examples
 yosys -D LEDS_NR=8 -p "synth_gowin -json blinky.json" blinky.v
 # nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NR-UV9QN881C6/I5 --cst tec0117.cst
 
@@ -39,7 +39,7 @@ yosys -p "read_verilog -lib +/gowin/cells_sim.v; clean -purge; show" unpack.v
 # change to your board
 openFPGALoader -b tangnano4k pack.fs
 ```
-### chisel
+### Chisel
 ```bash
 yosys -p "synth_gowin -top Led -json blinky.json" output/Led.v
 
