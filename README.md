@@ -41,6 +41,7 @@ openFPGALoader -b tangnano4k pack.fs
 ```
 ### Chisel
 ```bash
+make led_v
 yosys -p "synth_gowin -top Led -json blinky.json" output/Led.v
 
 nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC7/I6 --cst examples/tangnano4k.cst
