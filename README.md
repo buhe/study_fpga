@@ -7,6 +7,10 @@
 - [ ] blink: use yosys flah to hardware
 - [ ] riscv64
 
+### Basic 
+
+- https://www.bilibili.com/video/BV1aJ411R7Hd
+
 ### Install
 
 ```bash
