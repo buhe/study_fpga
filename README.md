@@ -16,7 +16,7 @@
 
 - https://www.bilibili.com/video/BV1aJ411R7Hd
 
-### Install
+### Install open source toolchain
 
 ```bash
 brew install yosys
