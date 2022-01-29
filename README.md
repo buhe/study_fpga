@@ -58,3 +58,13 @@ nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48
 gowin_pack -d GW1NSR-LV4CQN48PC7/I6 -o pack.fs pnrblinky.json
 
 ```
+
+
+
+ just need to specify how many LEDs your board has. For example for my TangNano with three LEDs:
+
+```bash
+yosys -D LEDS_NR=3 -p "synth_gowin -json blinky.json" blinky.v
+```
+
+so,9k is LEDS_NR=6,look up 9k.cst
