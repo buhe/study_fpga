@@ -5,7 +5,7 @@
 - [ ] yosys: flash to hardware
 - [ ] blink: chisel to verilog
 - [ ] blink: use yosys flah to hardware
-- [ ] a clock
+- [ ] a clock: i2c
 - [ ] riscv64 cpu
 
 ### Hardware
