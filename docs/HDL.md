@@ -1,2 +1,3 @@
 - 并行
+- 先 verilog 后 chisel
 - 
