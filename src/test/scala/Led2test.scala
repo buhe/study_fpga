@@ -8,7 +8,7 @@ class Led2Test extends AnyFlatSpec with ChiselScalatestTester {
   behavior of "Led2"
   it should "pass" in {
     println("Start the blinking LED")
-    test(new Led2) { c =>
+    test(new Led2).withAnnotations(Seq(WriteVcdAnnotation)) { c =>
       c.io.key.poke(0.U)
       if(c.io.led.peek().litToBoolean == false) {
         println("open");
