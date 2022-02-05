@@ -72,7 +72,7 @@ yosys -D LEDS_NR=3 -p "synth_gowin -json blinky.json" blinky.v
 
 so,9k is LEDS_NR=6,look up 9k.cst
 
-
+### Other
 
 ```bash
 brew install icarus-verilog
