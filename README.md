@@ -17,6 +17,7 @@
 
 - https://www.bilibili.com/video/BV1aJ411R7Hd
 - https://www.xuetangx.com/course/THU08081000386/10322165?channel=i.area.learn_title
+- https://github.com/buhe/fpga_study/blob/main/docs/chisel-book-chinese.pdf
 
 ### Install open source toolchain
 
@@ -70,3 +71,11 @@ yosys -D LEDS_NR=3 -p "synth_gowin -json blinky.json" blinky.v
 ```
 
 so,9k is LEDS_NR=6,look up 9k.cst
+
+
+
+```bash
+brew install icarus-verilog
+brew install --cask gtkwave
+```
+
