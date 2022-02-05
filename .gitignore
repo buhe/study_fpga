@@ -9,7 +9,7 @@
 *.il
 *.dot
 *.log
-*.pdf
+# *.pdf
 impl
 env
 *.pickle
