@@ -1,9 +1,20 @@
 
-// ANDtest.scala
-package test
- 
+import chiseltest._
+import org.scalatest.flatspec.AnyFlatSpec
+import led.Led
 import chisel3._
- 
-object testMain2 extends App {
-  val verilogString = chisel3.emitVerilog(new Led, Array("--target-dir", "output/"))
+
+class LedTest extends AnyFlatSpec with ChiselScalatestTester {
+  behavior of "Led"
+  it should "pass" in {
+    println("Start the blinking LED")
+    test(new Led) { c =>
+      if(c.io.led.peek().litToBoolean == false) {
+        println("open");
+      } else {
+        println("close");
+      }
+      println("\nEnd the blinking LED")
+    }
+  }
 }
