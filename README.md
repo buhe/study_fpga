@@ -16,6 +16,7 @@
 ### Basic 
 
 - https://www.bilibili.com/video/BV1aJ411R7Hd
+- https://www.xuetangx.com/course/THU08081000386/10322165?channel=i.area.learn_title
 
 ### Install open source toolchain
 
