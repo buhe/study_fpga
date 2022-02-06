@@ -1,12 +1,12 @@
 // these are the HDMI pins!
-IO_LOC "led[0]" 27;
-IO_LOC "led[1]" 28;
-IO_LOC "led[2]" 29;
-IO_LOC "led[3]" 30;
-IO_LOC "led[4]" 31;
-IO_LOC "led[5]" 32;
-IO_LOC "led[6]" 34;
-IO_LOC "led[7]" 35;
+IO_LOC "io_led[0]" 27;
+IO_LOC "io_led[1]" 28;
+IO_LOC "io_led[2]" 29;
+IO_LOC "io_led[3]" 30;
+IO_LOC "io_led[4]" 31;
+IO_LOC "io_led[5]" 32;
+IO_LOC "io_led[6]" 34;
+IO_LOC "io_led[7]" 35;
 IO_LOC "io_key" 15;
 IO_LOC "reset" 14;
 IO_LOC "clock" 45;
