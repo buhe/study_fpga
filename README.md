@@ -2,7 +2,7 @@
 
 ### Target
 
-- [ ] yosys: flash to hardware
+- [x] yosys: flash to hardware
 - [ ] blink: chisel to verilog
 - [ ] blink: use yosys flah to hardware
 - [ ] a clock: i2c
@@ -25,7 +25,7 @@
 ```bash
 brew install yosys
 pip install apycula
-brew install openfpgaloader
+brew install openfpgaloader --HEAD
 
 # install nextpnr
 brew install eigen
