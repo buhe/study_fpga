@@ -35,7 +35,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-### Verilog
+### ✅ Verilog
 
 ```bash
 # compile example
