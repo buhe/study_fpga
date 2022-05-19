@@ -3,6 +3,7 @@
 ### Target
 
 - [x] yosys: flash to hardware
+- [ ] add logic
 - [ ] blink: chisel to verilog
 - [ ] blink: use yosys flah to hardware
 - [ ] a clock: i2c
