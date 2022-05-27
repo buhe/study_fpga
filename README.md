@@ -14,7 +14,7 @@
 - tang nano 4k
 - tang nano 9k
 
-### Basic 
+### Resources
 
 - https://www.bilibili.com/video/BV1aJ411R7Hd
 - https://www.xuetangx.com/course/THU08081000386/10322165?channel=i.area.learn_title
@@ -22,7 +22,15 @@
 - https://open.163.com/newview/movie/free?pid=M7A8MMH3M&mid=M7A8O2HFQ
 - https://saiankit30.medium.com/how-to-simulate-verilog-models-on-macos-5a6f821b2c4f
 
-### Install open source toolchain
+
+### Simulate
+
+```bash
+brew install icarus-verilog
+brew install --cask gtkwave
+```
+
+### Flash to fpga
 
 ```bash
 brew install yosys
@@ -46,13 +54,6 @@ openFPGALoader -b tangnano4k pack.fs
 ```
 [video](https://youtube.com/shorts/uIiRk0R6xPE)
 
-### Simulate
-
-```bash
-brew install icarus-verilog
-brew install --cask gtkwave
-```
-
 ### Chisel
 ```bash
 make led_v
@@ -63,8 +64,6 @@ nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48
 gowin_pack -d GW1NSR-LV4CQN48PC7/I6 -o pack.fs pnrblinky.json
 
 ```
-
-
 
  just need to specify how many LEDs your board has. For example for my TangNano with three LEDs:
 
