@@ -1,4 +1,4 @@
-## Fpga study with open source software
+## Fpga study with open source software (on macos)
 
 ### Target
 
