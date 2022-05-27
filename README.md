@@ -47,9 +47,12 @@ openFPGALoader -b tangnano4k pack.fs
 [video](https://youtube.com/shorts/uIiRk0R6xPE)
 
 ### Simulate
+
 ```bash
 brew install icarus-verilog
+brew install --cask gtkwave
 ```
+
 ### Chisel
 ```bash
 make led_v
@@ -71,10 +74,4 @@ yosys -D LEDS_NR=3 -p "synth_gowin -json blinky.json" blinky.v
 
 so,9k is LEDS_NR=6,look up 9k.cst
 
-### Other
-
-```bash
-brew install icarus-verilog
-brew install --cask gtkwave
-```
 
