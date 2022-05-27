@@ -37,20 +37,7 @@ sudo make install
 ```
 
 ### ✅ Verilog
-```
-yosys -D LEDS_NR=8 -p "read_verilog blinky.v; synth_gowin -json blinky.json"
-nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC7/I6 --cst tangnano4k.cst
-gowin_pack -d GW1NSR-LV4CQN48PC7/I6 -o pack.fs pnrblinky.json
-openFPGALoader -b tangnano4k pack.fs
-```
-- todo
-```
-yosys -D LEDS_NR=8 -p "read_verilog blinky.v; synth_gowin -json blinky.json"
-nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC5/I4 --cst tangnano4k.cst
-gowin_pack -d GW1NSR-LV4CQN48PC5/I4 -o pack.fs pnrblinky.json
-openFPGALoader -b tangnano4k pack.fs
-```
-```
+```bash
 yosys -D LEDS_NR=8 -p "read_verilog blinky.v; synth_gowin -json blinky.json"
 nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC6/I5 --cst tangnano4k.cst
 gowin_pack -d GW1NSR-LV4CQN48PC6/I5 -o pack.fs pnrblinky.json
