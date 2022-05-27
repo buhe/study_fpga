@@ -43,6 +43,7 @@ nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48
 gowin_pack -d GW1NSR-LV4CQN48PC6/I5 -o pack.fs pnrblinky.json
 openFPGALoader -b tangnano4k pack.fs
 ```
+[video](https://youtube.com/shorts/uIiRk0R6xPE)
 ### Chisel
 ```bash
 make led_v
