@@ -30,7 +30,7 @@ brew install icarus-verilog
 brew install --cask gtkwave
 ```
 
-### Flash to fpga
+### ✅ Flash to fpga
 
 ```bash
 brew install yosys
