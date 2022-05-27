@@ -1,17 +1,25 @@
 module top (
-	input clk,
-	output [`LEDS_NR-1:0] led
+    input   sys_clk,
+    input   sys_rst_n,     // reset input
+    output  reg led        // LED
 );
 
-reg [25:0] ctr_q;
-wire [25:0] ctr_d;
+reg [23:0] counter;        //定义一个变量来计数
 
-// Sequential code (flip-flop)
-always @(posedge clk)
-	ctr_q <= ctr_d;
+always @(posedge sys_clk or negedge sys_rst_n) begin // Counter block
+    if (!sys_rst_n)
+        counter <= 24'd0;
+    else if (counter < 24'd1349_9999)       // 0.5s delay
+        counter <= counter + 1;
+    else
+        counter <= 24'd0;
+end
 
-// Combinational code (boolean logic)
-assign ctr_d = ctr_q + 1'b1;
-assign led = ctr_q[25:25-(`LEDS_NR - 1)];
+always @(posedge sys_clk or negedge sys_rst_n) begin // Toggle LED
+    if (!sys_rst_n)
+        led <= 1'b1;
+    else if (counter == 24'd1349_9999)       // 0.5s delay
+        led <= ~led;                         // ToggleLED
+end
 
 endmodule

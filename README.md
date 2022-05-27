@@ -36,20 +36,23 @@ sudo make install
 ```
 
 ### ✅ Verilog
-
-```bash
-# compile example
-cd examples
-yosys -D LEDS_NR=8 -p "synth_gowin -json blinky.json" blinky.v
-# nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NR-UV9QN881C6/I5 --cst tec0117.cst
-
+```
+yosys -D LEDS_NR=8 -p "read_verilog blinky.v; synth_gowin -json blinky.json"
 nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC7/I6 --cst tangnano4k.cst
 gowin_pack -d GW1NSR-LV4CQN48PC7/I6 -o pack.fs pnrblinky.json
-# test?
-brew install xdot
-gowin_unpack -d GW1NSR-LV4CQN48PC7/I6 -o unpack.v pack.fs
-yosys -p "read_verilog -lib +/gowin/cells_sim.v; clean -purge; show" unpack.v
-# change to your board
+openFPGALoader -b tangnano4k pack.fs
+```
+- todo
+```
+yosys -D LEDS_NR=8 -p "read_verilog blinky.v; synth_gowin -json blinky.json"
+nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC5/I4 --cst tangnano4k.cst
+gowin_pack -d GW1NSR-LV4CQN48PC5/I4 -o pack.fs pnrblinky.json
+openFPGALoader -b tangnano4k pack.fs
+```
+```
+yosys -D LEDS_NR=8 -p "read_verilog blinky.v; synth_gowin -json blinky.json"
+nextpnr-gowin --json blinky.json --write pnrblinky.json --device GW1NSR-LV4CQN48PC6/I5 --cst tangnano4k.cst
+gowin_pack -d GW1NSR-LV4CQN48PC6/I5 -o pack.fs pnrblinky.json
 openFPGALoader -b tangnano4k pack.fs
 ```
 ### Chisel
