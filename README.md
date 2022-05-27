@@ -20,6 +20,7 @@
 - https://www.xuetangx.com/course/THU08081000386/10322165?channel=i.area.learn_title
 - https://github.com/buhe/fpga_study/blob/main/docs/chisel-book-chinese.pdf
 - https://open.163.com/newview/movie/free?pid=M7A8MMH3M&mid=M7A8O2HFQ
+- https://saiankit30.medium.com/how-to-simulate-verilog-models-on-macos-5a6f821b2c4f
 
 ### Install open source toolchain
 
@@ -44,6 +45,11 @@ gowin_pack -d GW1NSR-LV4CQN48PC6/I5 -o pack.fs pnrblinky.json
 openFPGALoader -b tangnano4k pack.fs
 ```
 [video](https://youtube.com/shorts/uIiRk0R6xPE)
+
+### Simulate
+```bash
+brew install icarus-verilog
+```
 ### Chisel
 ```bash
 make led_v
