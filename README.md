@@ -25,12 +25,12 @@
 
 
 ### Simulate
-
+#### Tools
 ```bash
 brew install icarus-verilog
 brew install --cask gtkwave
 ```
-
+#### Execute
 ```bash
 iverilog -o sample_tb.vvp sample_tb.v
 ```
