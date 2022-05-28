@@ -16,8 +16,8 @@
 
 ### Resources
 
-- [数电](https://www.bilibili.com/video/BV1aJ411R7Hd)
-- [verilog](https://www.bilibili.com/video/BV12y4y1v7V3)
+- [数电 simplified chinese ](https://www.bilibili.com/video/BV1aJ411R7Hd)
+- [verilog simplified chinese ](https://www.bilibili.com/video/BV12y4y1v7V3)
 - https://www.xuetangx.com/course/THU08081000386/10322165?channel=i.area.learn_title
 - https://github.com/buhe/fpga_study/blob/main/docs/chisel-book-chinese.pdf
 - https://open.163.com/newview/movie/free?pid=M7A8MMH3M&mid=M7A8O2HFQ
