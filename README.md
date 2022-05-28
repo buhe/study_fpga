@@ -30,6 +30,10 @@ brew install icarus-verilog
 brew install --cask gtkwave
 ```
 
+```bash
+iverilog -o sample_tb.vvp sample_tb.v
+```
+
 ### ✅ Flash to fpga
 
 ```bash
