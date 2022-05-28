@@ -33,6 +33,9 @@ brew install --cask gtkwave
 #### Execute
 ```bash
 iverilog -o sample_tb.vvp sample_tb.v
+vvp sample_tb.vvp
+
+open -a gtkwave
 ```
 
 ### ✅ Flash to fpga
