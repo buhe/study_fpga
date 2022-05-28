@@ -3,6 +3,9 @@ module top (
     input   sys_rst_n,     // reset input
     output  reg led        // LED
 );
+initial begin
+    $display("line");
+end
 
 reg [23:0] counter;        //定义一个变量来计数
 
