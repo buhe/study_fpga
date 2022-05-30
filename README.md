@@ -23,6 +23,9 @@
 - https://open.163.com/newview/movie/free?pid=M7A8MMH3M&mid=M7A8O2HFQ
 - https://saiankit30.medium.com/how-to-simulate-verilog-models-on-macos-5a6f821b2c4f
 
+```bash
+pip install -U apio
+```
 
 ### Simulate
 #### Tools
